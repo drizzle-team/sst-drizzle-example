@@ -6,13 +6,14 @@ Current example was inspired by and created from twitch stream -> https://www.tw
 
 In this stream [@thdr](https://github.com/thdxr) tried to use Prisma + Kysely to setup automatic database migrations using sst
 
+---
 
-### We have prepared simple MVP example of how to achieve both migrations and ORM functionality using just Drizzle ORM
+#### We have prepared simple MVP example of how to achieve both migrations and ORM functionality using just Drizzle ORM
 
 <br />
 
-> ### Note: Current example just showing a possibility to use drizzle orm in serverless environment using AWS Lambda/Custom Resources/etc. 
-> #### In next versions of those examples we can setup Custom resources, by examples how SST Team already did [here](https://github.com/serverless-stack/sst/blob/a50f63baa944c897fd02e631fc8dd56bd42e5f38/packages/resources/src/RDS.ts#L521)
+> Note: Current example just showing a possibility to use drizzle orm in serverless environment using AWS Lambda/Custom Resources/etc. 
+> In next versions of those examples we can setup Custom resources, by examples how SST Team already did [here](https://github.com/serverless-stack/sst/blob/a50f63baa944c897fd02e631fc8dd56bd42e5f38/packages/resources/src/RDS.ts#L521)
 
 <br />
 <br />
@@ -90,3 +91,8 @@ pnpm run deploy
 3. From outputs use ApiGateway base url 
     - `/migrate` - to simulate migration process
     - `/` - to check if query is working as expected
+
+# Add new migrations
+Core package has npm script `migrate`. By running this script `drizzle-kit` will generate new sql file in output folder, that was chosen in cli params
+
+For more information you could check drizzle-kit [docs](https://github.com/drizzle-team/drizzle-kit-mirror) and drizzle-orm [docs](https://github.com/drizzle-team/drizzle-orm)
