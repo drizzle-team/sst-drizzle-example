@@ -88,5 +88,5 @@ pnpm run cdk:bootstrap aws://<account-id>/<region> --profile <profile>
 pnpm run deploy
 ```
 3. From outputs use ApiGateway base url 
-    - `/migrator` - to simulate migration process
+    - `/migrate` - to simulate migration process
     - `/` - to check if query is working as expected
