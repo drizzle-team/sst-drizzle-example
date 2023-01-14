@@ -1,0 +1,28 @@
+{
+  "version": "3",
+  "dialect": "pg",
+  "id": "df85c066-947b-418b-8a2a-6f9de63124e4",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "users": {
+      "name": "users",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {}
+    }
+  },
+  "enums": {}
+}

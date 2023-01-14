@@ -1,0 +1,22 @@
+{
+  "name": "@drizzle-sst/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind 'vitest'",
+    "typecheck": "tsc -noEmit",
+    "migrate": "drizzle-kit generate --dialect=pg --schema=src/sql --out=migrations"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-rds-data": "^3.245.0",
+    "@types/node": "^18.11.18",
+    "@types/pg": "^8.6.6",
+    "drizzle-kit": "^0.15.1",
+    "vitest": "^0.27.1"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.15.1",
+    "drizzle-orm-pg": "0.15.2-2b4d90d",
+    "sst": "2.0.0-rc.32"
+  }
+}

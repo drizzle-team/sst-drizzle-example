@@ -1,0 +1,16 @@
+{
+  "name": "@drizzle-sst/functions",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind 'vitest'",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@types/node": "^18.11.18"
+  },
+  "dependencies": {
+    "sst": "2.0.0-rc.32"
+  }
+}
