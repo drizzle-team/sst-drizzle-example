@@ -39,7 +39,7 @@ pnpm i drizzle-kit -D
 In this repo you may found same project structure as `create-sst` script will generate. Just few things were added: 
 <br />
 
-1. `packages/core/sql/index.ts` --> Add link here
+1. [`packages/core/sql/index.ts`](https://github.com/drizzle-team/sst-drizzle-example/blob/main/packages/core/src/sql/index.ts)
 
 Current file contain drizzle `AwsDataApi` connection setup + drizzle migrations setup. You can check more about drizzle-orm and drizzle-kit usage
 ```typescript
@@ -60,7 +60,7 @@ export const migrate = async (path: string) => {
 ```
 <br />
 
-2. `packages/core/sql/schema.ts` --> Add link here
+2. [`packages/core/sql/schema.ts`](https://github.com/drizzle-team/sst-drizzle-example/blob/main/packages/core/src/sql/schema.ts)
 
 Current file contains basic table schema definition, that can be used in further queries
 
