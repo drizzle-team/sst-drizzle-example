@@ -10,6 +10,7 @@ export function MyStack({ stack }: StackContext) {
     defaults: {
       function: {
         bind: [rds],
+        // copy files from core migrations folder to a migrations folder that is bundled in the lambda
         copyFiles: [
           {
             from: "packages/core/migrations",
@@ -17,11 +18,10 @@ export function MyStack({ stack }: StackContext) {
           },
         ],
       },
-      
     },
     routes: {
-      "GET /": 'packages/functions/src/lambda.handler',
-      "GET /migrate": 'packages/functions/src/migrator.handler'
+      "GET /": "packages/functions/src/lambda.handler",
+      "GET /migrate": "packages/functions/src/migrator.handler",
     },
   });
 

@@ -1,14 +1,12 @@
-import { drizzle } from "drizzle-orm-pg/aws-datapi";
-import { migrate as mig } from "drizzle-orm-pg/aws-datapi/migrator";
-import { RDS } from "sst/node/rds";
 import { RDSDataClient } from "@aws-sdk/client-rds-data";
+import { drizzle } from "drizzle-orm/aws-data-api/pg";
+import { migrate as mig } from "drizzle-orm/postgres-js/migrator";
+import { RDS } from "sst/node/rds";
 
-export const db = drizzle(new RDSDataClient({}), {
-  // @ts-ignore
+const rdsClient = new RDSDataClient({});
+export const db = drizzle(rdsClient, {
   database: RDS.rds.defaultDatabaseName,
-  // @ts-ignore
   secretArn: RDS.rds.secretArn,
-  // @ts-ignore
   resourceArn: RDS.rds.clusterArn,
 });
 
