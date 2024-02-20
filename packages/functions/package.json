@@ -11,6 +11,6 @@
     "@types/node": "^18.11.18"
   },
   "dependencies": {
-    "sst": "2.0.0-rc.32"
+    "sst": "^2.40.3"
   }
 }

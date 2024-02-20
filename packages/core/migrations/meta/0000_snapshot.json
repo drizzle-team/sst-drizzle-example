@@ -1,11 +1,12 @@
 {
-  "version": "3",
-  "dialect": "pg",
-  "id": "df85c066-947b-418b-8a2a-6f9de63124e4",
+  "id": "d6a982c8-6d9d-481a-b336-49ab7315c1c5",
   "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "5",
+  "dialect": "pg",
   "tables": {
     "users": {
       "name": "users",
+      "schema": "",
       "columns": {
         "id": {
           "name": "id",
@@ -21,8 +22,16 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {}
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
     }
   },
-  "enums": {}
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
 }
